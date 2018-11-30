@@ -1,0 +1,23 @@
+.foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-bar {
+  left: 0;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(56,56,59);  
+}
+
+.icon-bar img {
+  max-width: 50px;
+  cursor: pointer;
+}
+
