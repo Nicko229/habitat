@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from "../assets/download.jpeg"
+import { NavLink } from 'react-router-dom';
+import logo from "../assets/logo.png"
 import './NavComponent.css';
 
 export default class NavComponent extends Component {
@@ -8,16 +9,16 @@ export default class NavComponent extends Component {
       <div>
         <nav className="navbar">
           <div className="nav-left">
-            <a href="">Home</a>
-            <a href="">What We Do</a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/whatwedo">What We Do</NavLink>
           </div>
           <div>
             <img src={logo}></img>
           </div>
           <div className="nav-right">
-            <a href="">FAQ</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <NavLink to="/FAQ">FAQ</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </div>
         </nav>
       </div >
