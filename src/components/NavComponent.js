@@ -7,7 +7,7 @@ export default class NavComponent extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar">
+        <nav className="navbar-top">
           <div className="nav-left">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/whatwedo">What We Do</NavLink>
